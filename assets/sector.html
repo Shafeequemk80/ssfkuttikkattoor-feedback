@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poonoor Div sectorData</title>
+       <link rel="icon" type="image/png"  href="logo.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <style>
+    .error-message {
+      color: red;
+      margin-top: 5px;
+    }
+  </style>
+  <body class="d-flex justify-content-center p-5 border rounded">
+    <div class="col-md-6">
+      <form id="submit-form" action="" method="POST">
+        <h3 style="text-align: center; ">Sector Data</h3>
+        <br />
+        <div class="row">
+          <div class="border p-3 m-3">
+            <h6>Sector</h6>
+            <select
+              id="sectorDropdown"
+              name="sector"
+              class="form-select"
+              aria-label="Default select example"
+               
+            >
+              <option value="" selected disabled>Select sector</option>
+              <option value="ELETTIL">ELETTIL</option>
+              <option value="KANTHAPURAM">KANTHAPURAM</option>
+              <option value="KIZHAKKOTH">KIZHAKKOTH</option>
+              <option value="UNNIKULAM">UNNIKULAM</option>
+              <option value="POONOOR">POONOOR</option>
+              <option value="THALAYAD">THALAYAD</option>
+              <option value="AVILORA">AVILORA</option>
+            </select>
+          </div>
+
+        
+
+          <!-- President -->
+          <div class="border p-3 m-3">
+            <h6>President</h6>
+            <div>
+              <input
+                type="text"
+                name="PresidentName"
+                class="form-control"
+                id="PresidentName"
+                 
+                placeholder="President Name"
+              />
+              <p class="error-message" id="PresidentName-error"></p>
+            </div>
+            <div class="form-group mt-3">
+              <input
+               
+                type="text"
+                class="form-control"
+                name="Presidentphone_number"
+                id="President_phone_number"
+                placeholder="President Mobile number"
+              />
+              <p class="error-message" id="President_phone_number-error"></p>
+            </div>
+            
+              <select
+                id="unitDropdown"
+                class="form-select unitDropdown"
+                name="Presidentunit"
+                aria-label="Default select example"
+                 
+              >
+                <option value="" selected disabled>Select Unit</option>
+              </select>
+            
+          </div>
+
+          <!-- Secretary -->
+          <div class="border p-3 m-3">
+            <h6>Secretary</h6>
+            <div>
+              <input
+               
+                type="text"
+                name="SecretaryName"
+                class="form-control"
+                id="SecretaryName"
+                placeholder="Secretary Name"
+              />
+              <p class="error-message" id="SecretaryName-error"></p>
+            </div>
+            <div class="form-group mt-3">
+              <input
+               
+                type="text"
+                class="form-control"
+                name="Secretaryphone_number"
+                id="Secretary_phone_number"
+                placeholder="Secretary Mobile number"
+              />
+              <p class="error-message" id="Secretary_phone_number-error"></p>
+            </div>
+            <select
+            
+            class="form-select unitDropdown"
+            name="Secretaryunit"
+            aria-label="Default select example"
+             
+          >
+            <option value="" selected disabled>Select Unit</option>
+          </select>
+          </div>
+
+          <!-- Fi.Secretary -->
+          <div class="border p-3 m-3">
+            <h6>Fi.Secretary</h6>
+            <div>
+              <input
+               
+                type="text"
+                name="FiSecretaryName"
+                class="form-control"
+                id="FiSecretaryName"
+                placeholder="Fi.Secretary Name"
+              />
+              <p class="error-message" id="FiSecretaryName-error"></p>
+            </div>
+            <div class="form-group mt-3">
+              <input
+               
+                type="text"
+                class="form-control"
+                name="FiSecretaryphone_number"
+                id="FiSecretary_phone_number"
+                placeholder="Fi.Secretary Mobile number"
+              />
+              <p class="error-message" id="FiSecretary_phone_number-error"></p>
+            </div>
+            <select
+            id="unitDropdown"
+            class="form-select unitDropdown "
+            name="FiSecretaryunit"
+            aria-label="Default select example"
+             
+          >
+            <option value="" selected disabled>Select Unit</option>
+          </select>
+          </div>
+
+          <!-- QD -->
+          <div class="border p-3 m-3">
+            <h6>QD</h6>
+            <div>
+              <input
+               
+                type="text"
+                name="QDName"
+                class="form-control"
+                id="QDName"
+                placeholder="QD Name"
+              />
+              <p class="error-message" id="QDName-error"></p>
+            </div>
+            <div class="form-group mt-3">
+              <input
+               
+                type="text"
+                class="form-control"
+                name="QDphone_number"
+                id="QD_phone_number"
+                placeholder="QD Mobile number"
+              />
+              <p class="error-message" id="QD_phone_number-error"></p>
+            </div>
+            <select
+            id="unitDropdown"
+            class="form-select unitDropdown"
+            name="QDunit"
+            aria-label="Default select example"
+             
+          >
+            <option value="" selected disabled>Select Unit</option>
+          </select>
+          </div>
+
+          <!-- GD -->
+          <div class="border p-3 m-3">
+            <h6>GD</h6>
+            <div>
+              <input
+               
+                type="text"
+                name="GDName"
+                class="form-control"
+                id="GDName"
+                placeholder="GD Name"
+              />
+              <p class="error-message" id="GDName-error"></p>
+            </div>
+            <div class="form-group mt-3">
+              <input
+               
+                type="text"
+                class="form-control"
+                name="GDphone_number"
+                id="GD_phone_number"
+                placeholder="GD Mobile number"
+              />
+              <p class="error-message" id="GD_phone_number-error"></p>
+            </div>
+            <select
+            id="unitDropdown"
+            class="form-select unitDropdown"
+            name="GDunit"
+            aria-label="Default select example"
+             
+          >
+            <option value="" selected disabled>Select Unit</option>
+          </select>
+          </div>
+
+          <!-- mazahvil -->
+          <div class="border p-3 m-3">
+            <h6>Mazahvil</h6>
+            <div>
+              <input
+               
+                type="text"
+                name="mazahvilName"
+                class="form-control"
+                id="mazahvilName"
+                placeholder="mazahvil Name"
+              />
+              <p class="error-message" id="mazahvilName-error"></p>
+            </div>
+            <div class="form-group mt-3">
+              <input
+               
+                type="text"
+                class="form-control"
+                name="mazahvilphone_number"
+                id="mazahvil_phone_number"
+                placeholder="Mazahvil Mobile number"
+              />
+              <p class="error-message" id="mazahvil_phone_number-error"></p>
+            </div>
+            <select
+            id="unitDropdown"
+            class="form-select unitDropdown"
+            name="mazahvilunit"
+            aria-label="Default select example"
+             
+          >
+            <option value="" selected disabled>Select Unit</option>
+          </select>
+          </div>
+
+          <!-- kalayalam -->
+          <div class="border p-3 m-3">
+            <h6>Kalayalam</h6>
+            <div>
+              <input
+               
+                type="text"
+                name="kalayalamName"
+                class="form-control"
+                id="kalayalamName"
+                placeholder="Kalayalam Name"
+              />
+              <p class="error-message" id="kalayalamName-error"></p>
+            </div>
+            <div class="form-group mt-3">
+              <input
+               
+                type="text"
+                class="form-control"
+                name="kalayalamphone_number"
+                id="kalayalam_phone_number"
+                placeholder="Kalayalam Mobile number"
+              />
+              <p class="error-message" id="kalayalam_phone_number-error"></p>
+            </div>
+            <select
+            id="unitDropdown"
+            class="form-select unitDropdown"
+            name="kalayalamunit"
+            aria-label="Default select example"
+             
+          >
+            <option value="" selected disabled>Select Unit</option>
+          </select>
+          </div>
+
+          <!-- Wefi -->
+          <div class="border p-3 m-3">
+            <h6>Wefi</h6>
+            <div>
+              <input
+               
+                type="text"
+                name="WefiName"
+                class="form-control"
+                id="WefiName"
+                placeholder="Wefi Name"
+              />
+              <p class="error-message" id="WefiName-error"></p>
+            </div>
+            <div class="form-group mt-3">
+              <input
+               
+                type="text"
+                class="form-control"
+                name="Wefiphone_number"
+                id="Wefi_phone_number"
+                placeholder="Wefi Mobile number"
+              />
+              <p class="error-message" id="Wefi_phone_number-error"></p>
+            </div>
+            <select
+            id="unitDropdown"
+            class="form-select unitDropdown"
+            name="Wefiunit"
+            aria-label="Default select example"
+             
+          >
+            <option value="" selected disabled>Select Unit</option>
+          </select>
+          </div>
+
+          <!-- Teenstar -->
+          <div class="border p-3 m-3">
+            <h6>Teenstar</h6>
+            <div>
+              <input
+               
+                type="text"
+                name="TeenstarName"
+                class="form-control"
+                id="TeenstarName"
+                placeholder="Teenstar Name"
+              />
+              <p class="error-message" id="TeenstarName-error"></p>
+            </div>
+            <div class="form-group mt-3">
+              <input
+               
+                type="text"
+                class="form-control"
+                name="Teenstarphone_number"
+                id="Teenstar_phone_number"
+                placeholder="Teenstar Mobile number"
+              />
+              <p class="error-message" id="Teenstar_phone_number-error"></p>
+            </div>
+            <select
+            id="unitDropdown"
+            class="form-select unitDropdown"
+            name="Teenstarunit"
+            aria-label="Default select example"
+             
+          >
+            <option value="" selected disabled>Select Unit</option>
+          </select>
+          </div>
+          <div class="text-end">
+            <button
+              class="btn btn-success mb-2"
+              type="button"
+              id="addSecetriate"
+            >
+              Add Secetriate
+            </button>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-primary w-50" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const addButton = document.getElementById("addSecetriate");
+    const formContainer = document.querySelector(".row");
+
+    let secetriateCounter = 1;
+
+    addButton.addEventListener("click", function () {
+        if (secetriateCounter < 4) {
+            addSecetriateSection(formContainer);
+            secetriateCounter++;
+        } else {
+            // Display a message or take action when the limit is reached
+         
+            Swal.fire({
+          icon: 'error',
+          title: 'Maximum limit reached',
+          text: "You cannot add more than 3 Secetriate sections.",
+        })   
+        }
+    });
+
+    function addSecetriateSection(container) {
+        const newSection = document.createElement("div");
+        newSection.className = "border p-3 m-3";
+
+        const uniqueId = `secetriateSection${secetriateCounter}`;
+
+        newSection.innerHTML = `
+            <h6>Secetriate</h6>
+            <div>
+                <input type="text" name="${uniqueId}Name" class="form-control" placeholder="Secetriate Name">
+                <p class="error-message" id="${uniqueId}Name-error"></p>
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" class="form-control" name="${uniqueId}phone_number" placeholder="Secetriate Mobile number">
+                <p class="error-message" id="${uniqueId}_phone_number-error"></p>
+            </div>
+            <div>
+                <input type="text" name="${uniqueId}unit" class="form-control" placeholder="Secetriate unit">
+                <p class="error-message" id="${uniqueId}unit-error"></p>
+            </div>
+        `;
+
+        container.appendChild(newSection);
+     
+
+        // Set up validation for the new Secetriate section
+        const secetriateNameInput = newSection.querySelector(`[name="${uniqueId}Name"]`);
+        const secetriatePhoneInput = newSection.querySelector(`[name="${uniqueId}phone_number"]`);
+        const secetriateunitInput = newSection.querySelector(`[name="${uniqueId}unit"]`);
+
+        secetriateNameInput.addEventListener("blur", () => validateSecetriateName(secetriateNameInput, `${uniqueId}Name-error`));
+        secetriatePhoneInput.addEventListener("blur", () => validateSecetriatePhoneNumber(secetriatePhoneInput, `${uniqueId}_phone_number-error`));
+        secetriateunitInput.addEventListener("blur", () => validateSecetriateunit(secetriateunitInput, `${uniqueId}unit-error`));
+    }
+
+    function validateSecetriateName(input, errorId) {
+        const errorMessageElement = document.getElementById(errorId);
+        errorMessageElement.textContent = "";
+
+        if (input.value.trim() === "") {
+            errorMessageElement.textContent = "Please enter Secetriate Name";
+        }
+        // Add more validation rules if needed
+    }
+
+    function validateSecetriatePhoneNumber(input, errorId) {
+        const errorMessageElement = document.getElementById(errorId);
+        errorMessageElement.textContent = "";
+
+        if (input.value.trim() === "") {
+            errorMessageElement.textContent = "Please enter Secetriate Mobile Number";
+        } else if (!/^\d{10}$/.test(input.value.trim())) {
+            errorMessageElement.textContent = "Mobile Number must be 10 digits";
+        }
+        // Add more validation rules if needed
+    }
+
+    function validateSecetriateunit(input, errorId) {
+      const errorMessageElement = document.getElementById(errorId);
+        errorMessageElement.textContent = "";
+
+        if (input.value.trim() === "") {
+            errorMessageElement.textContent = "Please enter Secetriate Unit Name";
+        }
+    }
+});
+
+    </script>
+    <script src="validationsector.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#submit-form").submit((e) => {
+        e.preventDefault();
+        if (formValidation()) {
+          console.log("Form data:", $("#submit-form").serialize());
+          $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbwewRbAPKVsT-5FCKiN08SDCd6NaU6fMEHr--ZhgxSmw-BzNCGFshhPNColgauewouUOw/exec",
+            data: $("#submit-form").serialize(),
+            method: "post",
+            success: function (response) {
+              Swal.fire({
+                icon: "success",
+                title: "Success!",
+                text: "Your operation was successful.",
+                showConfirmButton: false,
+                timer: 2000, // Adjust the time the message stays on the screen (in milliseconds)
+              }).then(() => window.location.reload());
+
+              // window.location.href="https://google.com"
+            },
+            error: function (err) {
+                Swal.fire({
+                icon: "error",
+                title: "error!",
+                text: "Something Error",
+                showConfirmButton: false,
+                timer: 2000, // Adjust the time the message stays on the screen (in milliseconds)
+              }).then(() => window.location.reload());
+              
+            },
+          });
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
